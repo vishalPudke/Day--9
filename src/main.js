@@ -1,4 +1,4 @@
-import {sum } from "./calc.js";
-let output=sum(140,3);
-
-console.log("Sum :"+" "+ output);
+import { readFileSync } from "node:fs";
+let filepath = "D:\Cdac\Cdac-2023-March\Module\WPT\WPT_MARCH";
+let fileData = readFileSync(filepath);
+console.log(fileData);
