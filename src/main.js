@@ -1,9 +1,15 @@
-import { readFile } from "node:fs/promises";
+import { writeFile } from "node:fs/promises";
 
 async function main() {
-  let filePath =
-    "D:CdacCdac-2023-MarchModuleWPTWPT_MARCHDay-7_Backend ProgrammingDay-9package.json";
-  let fileData = await readFile(filePath, { encoding: "utf-8" });
-  console.log(fileData);
+  try {
+    let filePath =
+      "D:Cdac/Cdac-2023-March/ModuleWPTWPT_MARCH/Day-7_Backend Programming/Day-9/vishal.txt";
+
+    let fileData = "Asynchronulsy sakhajksa sajhdkjs cusns vishal ;epraksahs ";
+    await writeFile(filePath, fileData);
+    console.log(fileData);
+  } catch (e) {
+    console.log("Exception Ocurred :: ", e.message);
+  }
 }
 main();
