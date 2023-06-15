@@ -1,6 +1,8 @@
-import { readFileSync, writeFileSync } from "node:fs";
-let filepath = "D:CdacCdac-2023-MarchModuleWPTWPT_MARCH\vishal.txt";
-
-let data = "learn how to create a file Thank you Santosh sir and CDAC family";
-let fileData = writeFileSync(filepath, data);
-console.log("Write Success");
+console.log("Hello 1");
+// console.log("Hello 2");
+// setTimeout(() => console.log("Hello 2"),1000);
+setTimeout(() => {
+  console.log("Hello 2");
+}, 0);
+console.log("Hello 3");
+console.log("Hello 4");
